@@ -112,6 +112,7 @@ const Homepage = () => {
         data: { transactionId: id }, 
       }
     );
+    setLoading(false);
     message.success("Transaction deleted successfully");
     window.location.reload();
   } catch (error) {
