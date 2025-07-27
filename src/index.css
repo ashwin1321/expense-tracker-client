@@ -1,0 +1,57 @@
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 86.6vh;
+  /* background-color: #202222; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.abc,
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* transaction page */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+}
+.selects{
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+/* antd  icons */
+.switch-icons {
+  border: 1px solid rgba(0, 0, 0, 0.667);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+.content {
+  height: 100vh;
+}
