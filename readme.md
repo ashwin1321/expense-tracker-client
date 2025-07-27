@@ -20,4 +20,4 @@ yarn run dev or npm run dev
 - Please do install node and yarn/npm before running this web app.
 - yarn is preferred to run this app but there is no problem using npm. Make sure to delete the yarn.lock file if you are using npm.
 
-### Please find the Live App [here]('https://expense-tracker-client-oxvv.onrender.com/login)
+### Please find the  Live App [here](https://expense-tracker-client-oxvv.onrender.com)
