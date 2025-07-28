@@ -76,7 +76,7 @@ const Homepage = () => {
       setLoading(true);
 
       if (editable) {
-        await axios.put("https://expense-tracker-server-mr2f.onrender.com/api/v1/transactions/update-transaction", {
+        await axios.put(`https://expense-tracker-server-mr2f.onrender.com/api/v1/transactions/update-transaction/${editable._id}`, {
           payload: {
             ...values,
             userid: user._id,
@@ -92,14 +92,13 @@ const Homepage = () => {
         });
         message.success("Transaction added successfully");
       }
-      console.log("|we are here");
 
       setShowModal(false);
       setEditable(null);
        window.location.reload();
     } catch (error) {
       setLoading(false);
-      message.error(`failed to add transaction.`);
+      message.error(`failed to add/update transaction.`);
     }
   };
 
@@ -107,11 +106,8 @@ const Homepage = () => {
  const handleDelete = async (id) => {
   try {
     await axios.delete(
-      "https://expense-tracker-server-mr2f.onrender.com/api/v1/transactions/delete-transaction",
-      {
-        data: { transactionId: id }, 
-      }
-    );
+    `https://expense-tracker-server-mr2f.onrender.com/api/v1/transactions/delete-transaction/${id}`
+  );
     setLoading(false);
     message.success("Transaction deleted successfully");
     window.location.reload();
